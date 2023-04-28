@@ -1,7 +1,14 @@
 # musicappnew
 
-A new Flutter project.
-
+This is a basic music player app which has used following dependencies such as:
+ -flutter_dotenv
+ -dio
+ -json_annotation
+ -audioplayers
+ -loading_indicator.
+ 
+ The Singers URL is hosted on my github you can use that or create your own as well. 
+We are also using Itunes API for fetching songs.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
