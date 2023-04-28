@@ -18,9 +18,15 @@ class SingerView extends StatefulWidget {
 class _SingerViewState extends State<SingerView> {
   final SingerService _singerService = SingerService();
 
+  List<Singer> singer = [];
+
   @override
   void initState() {
     super.initState();
+    // Future<List<Singer>> future = _singerService.getSingers();
+    // future.then((List<Singer> singer) {
+    //   this.singer = singer;
+    // }).catchError((e) => print("Error is $e"));
   }
 
   @override
