@@ -16,12 +16,13 @@ class SingerService {
     //print(url);
 
     Response response = await _apiClient.get(url);
+    // print(response.data);
 
     // Here we are getting the data type as string using runtype
     // so we'll convert String(JSON) into Object using JSONDecode
-    dynamic object = jsonDecode(response.data);
+    // dynamic object = jsonDecode(response.data);
 
-    List<dynamic> list = object['singers'];
+    List<dynamic> list = response.data["singers"];
     List<Singer> singer = list.map((e) => Singer.SingerFromJSON(e)).toList();
 
     return singer;
